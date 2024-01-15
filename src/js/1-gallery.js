@@ -88,8 +88,7 @@ function renderGallery(images) {
 }
 renderGallery(images);
 
-const lightBox = new SimpleLightbox(
-  '.gallery-link',
-  { captionsData: 'alt' },
-  { captionDelay: 250 }
-);
+const lightBox = new SimpleLightbox('.gallery-link', {
+  captionsData: 'alt',
+  captionDelay: 250,
+});
