@@ -7,5 +7,5 @@ import{S as r}from"./vendor-c9def49e.js";(function(){const t=document.createElem
     width = "360"
     />
   </a>
-</li>`).join("");s.innerHTML=t}l(c);new r(".gallery-link",{captionsData:"alt"},{captionDelay:250});
-//# sourceMappingURL=1-gallery-25f06ded.js.map
+</li>`).join("");s.innerHTML=t}l(c);new r(".gallery-link",{captionsData:"alt",captionDelay:250});
+//# sourceMappingURL=1-gallery-e7b07448.js.map
