@@ -68,9 +68,10 @@ const images = [
 ];
 
 const list = document.querySelector('.gallery');
-const item = images
-  .map(
-    image => `<li class="gallery-item">
+function renderGallery(images) {
+  const item = images
+    .map(
+      image => `<li class="gallery-item">
   <a class="gallery-link" href="${image.original}" >
     <img
       class="gallery-image"
@@ -80,14 +81,15 @@ const item = images
     />
   </a>
 </li>`
-  )
-  .join('');
+    )
+    .join('');
 
-list.innerHTML = item;
+  list.innerHTML = item;
+}
+renderGallery(images);
 
-// list.addEventListener('click', event => {
-//     if (event.target.nodeName !== 'IMG') {
-//         return;
-//     }
-//     event.preventDefault();
-// })
+const lightBox = new SimpleLightbox(
+  '.gallery-link',
+  { captionsData: 'alt' },
+  { captionDelay: 250 }
+);
